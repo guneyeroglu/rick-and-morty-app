@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  &::after {
+    box-sizing: border-box;
+  }
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: white; // it will change
+  background: black; // it will change
+}
+
+.container {
+  width: 100%;
+  max-width: 1800px;
+  min-width: 1200px;
+  margin: 0 auto;
+}
