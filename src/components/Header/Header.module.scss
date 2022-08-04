@@ -160,14 +160,22 @@
           width: 125px;
           height: 75px;
 
-          img {
-            transition: transform 0.25s ease-in-out;
-          }
+          a {
+            width: 40px;
+            height: 40px;
 
-          &:hover {
-            cursor: pointer;
             img {
-              transform: scale(1.1);
+              width: 100%;
+              height: 100%;
+              transition: transform 0.25s ease-in-out;
+            }
+
+            &:hover {
+              cursor: pointer;
+
+              img {
+                transform: scale(1.1);
+              }
             }
           }
         }
