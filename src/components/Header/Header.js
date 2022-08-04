@@ -6,6 +6,9 @@ import Icon from '../Icons/Icon';
 import logo from '../../assets/images/logo.png';
 import styles from './Header.module.scss';
 
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+
 const Header = () => {
   const isActive = ({ isActive }) => {
     return isActive ? styles.active : '';
@@ -17,16 +20,43 @@ const Header = () => {
     ? { display: 'block' }
     : { display: 'none' };
 
-  const [language, setLanguage] = useState('UK');
+  const [language, setLanguage] = useState(
+    localStorage.getItem('language') || 'en-GB'
+  );
 
-  const languageHandler = (lang) => setLanguage(lang);
+  const languageHandler = (lang) => {
+    localStorage.setItem('language', lang);
+    i18next.changeLanguage(lang);
+    setLanguage(lang);
+  };
 
+  const { t } = useTranslation();
   const headerList = [
-    { id: '1234-Header-Home', name: 'Home', to: '/' },
-    { id: '1234-Header-Characters', name: 'Characters', to: '/characters' },
-    { id: '1234-Header-Episodes', name: 'Episodes', to: '/episodes' },
-    { id: '1234-Header-Locations', name: 'Locations', to: '/locations' },
-    { id: '1234-Header-FavChar', name: 'Favorite Char', to: '/favoritechar' },
+    {
+      id: '1234-Header-Home',
+      name: t('homeNav'),
+      to: '/',
+    },
+    {
+      id: '1234-Header-Characters',
+      name: t('charactersNav'),
+      to: '/characters',
+    },
+    {
+      id: '1234-Header-Episodes',
+      name: t('episodesNav'),
+      to: '/episodes',
+    },
+    {
+      id: '1234-Header-Locations',
+      name: t('locationsNav'),
+      to: '/locations',
+    },
+    {
+      id: '1234-Header-FavChar',
+      name: t('favoriteCharNav'),
+      to: '/favoritechar',
+    },
   ];
 
   return (
@@ -56,25 +86,25 @@ const Header = () => {
             <div className={styles.selections__country}>
               <div
                 className={styles.flag}
-                onClick={() => languageHandler('UK')}
+                onClick={() => languageHandler('en-GB')}
               >
                 <img
                   src='https://img.icons8.com/plasticine/30/000000/rick-sanchez.png'
                   alt='UK'
                 />
-                <span className={language === 'UK' ? styles.active : ''}>
-                  UK
+                <span className={language === 'en-GB' ? styles.active : ''}>
+                  EN
                 </span>
               </div>
               <div
                 className={styles.flag}
-                onClick={() => languageHandler('TR')}
+                onClick={() => languageHandler('tr-TR')}
               >
                 <img
                   src='https://img.icons8.com/plasticine/30/000000/morty-smith.png'
                   alt='TR'
                 />
-                <span className={language === 'TR' ? styles.active : ''}>
+                <span className={language === 'tr-TR' ? styles.active : ''}>
                   TR
                 </span>
               </div>
