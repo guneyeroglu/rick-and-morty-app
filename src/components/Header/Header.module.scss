@@ -7,6 +7,9 @@
   box-shadow: -1px 6px 18px -1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 6px 18px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 6px 18px -1px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 99;
 
   &__logo {
     display: flex;
@@ -59,7 +62,14 @@
           color: #3b3e43;
           text-decoration: none;
           padding: 0.25rem 1rem;
+
           &.active {
+            color: #fff;
+            background-color: #3b3e43;
+            border-radius: 0.5rem;
+          }
+
+          &:hover {
             color: #fff;
             background-color: #3b3e43;
             border-radius: 0.5rem;
