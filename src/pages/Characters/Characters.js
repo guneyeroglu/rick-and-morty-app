@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Character = () => {
+const Characters = () => {
   return (
     <>
       <div></div>
@@ -8,4 +8,4 @@ const Character = () => {
   );
 };
 
-export default Character;
+export default Characters;
