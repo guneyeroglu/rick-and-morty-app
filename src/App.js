@@ -1,7 +1,8 @@
-import styles from './App.module.scss';
 import Home from './pages/Home/Home';
 
-import './assets/i18n/i18n';
+import styles from './App.module.scss';
+
+import './assets/i18n/index';
 
 const App = () => {
   return (
