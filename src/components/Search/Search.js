@@ -13,7 +13,7 @@ const Search = (props) => {
         placeholder={props.placeholder}
       />
       <div className={styles.search__icon}>
-        <Icon icon={'MagnifyingGlass'} fill='black' />
+        <Icon icon={'MagnifyingGlassIcon'} fill='black' />
       </div>
     </div>
   );

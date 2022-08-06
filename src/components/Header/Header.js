@@ -80,7 +80,7 @@ const Header = () => {
       <div className={styles.container__settings}>
         <div className={styles.collapse}>
           <button onClick={() => setOpenSettings(!openSettings)}>
-            <Icon icon={'SettingsLogo'} fill='black' />
+            <Icon icon={'SettingsIcon'} fill='black' />
           </button>
           <div className={styles.selections} style={styleSettings}>
             <div className={styles.selections__country}>
