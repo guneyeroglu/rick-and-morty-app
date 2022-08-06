@@ -24,7 +24,7 @@ const Home = () => {
           <div className={styles.main__explanation}>
             <span>{t('homeExplanation')}</span>
           </div>
-          <Search placeholder={t('searchPlaceholder')} />
+          <Search />
         </div>
         <div className={styles.body}>
           <div className={styles.shadow}>
