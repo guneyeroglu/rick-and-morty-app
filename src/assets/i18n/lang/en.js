@@ -7,5 +7,7 @@ export const en = {
     favoriteCharNav: 'Favorite Char',
     homeExplanation: 'Find your favorite Rick and Morty characters...',
     searchPlaceholder: 'Search...',
+    sortText: 'Default',
+    charLastLocation: 'Last known location:',
   },
 };

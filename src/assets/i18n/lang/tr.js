@@ -7,5 +7,7 @@ export const tr = {
     favoriteCharNav: 'Favori Karakterler',
     homeExplanation: 'Favori Rick and Morty karakterini bul...',
     searchPlaceholder: 'Ara...',
+    sortText: 'Varsayılan',
+    charLastLocation: 'Bilinen son lokasyon:',
   },
 };
