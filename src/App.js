@@ -1,5 +1,6 @@
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
+import Characters from './pages/Characters/Characters';
 
 import './App.module.scss';
 
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/characters' element={<Characters />} />
       </Routes>
     </>
   );
