@@ -1,14 +1,17 @@
 import React from 'react';
+
 import MainIcon from './MainIcon';
 import ArrowIcon from './ArrowIcon';
 import SettingsIcon from './SettingsIcon';
 import MagnifyingGlassIcon from './MagnifyingGlassIcon';
+import SortIcon from './SortIcon';
 
 const logos = {
   MainIcon: <MainIcon />,
   ArrowIcon: <ArrowIcon />,
   SettingsIcon: <SettingsIcon />,
   MagnifyingGlassIcon: <MagnifyingGlassIcon />,
+  SortIcon: <SortIcon />,
 };
 
 const Icon = (props) => {
