@@ -1,0 +1,11 @@
+.line {
+  margin: 2rem;
+  border-left: 0.25rem solid #3b3e43;
+  height: 300px;
+}
+
+@media screen and (min-width: 1600px) {
+  .line {
+    height: 750px;
+  }
+}
