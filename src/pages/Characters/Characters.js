@@ -15,20 +15,21 @@ const Characters = () => {
   const { t } = useTranslation();
 
   const [charData, setCharData] = useState([]);
-  const [charPage, setCharPage] = useState(0);
-
-  const fetchData = async () => {
-    const response = await axios.get(
-      'https://rickandmortyapi.com/api/character'
-    );
-
-    setCharData(response.data.results);
-    setCharPage(response.data.info.pages);
-  };
+  const [pageData, setPageData] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
+    const fetchData = async () => {
+      const response = await axios.get(
+        `https://rickandmortyapi.com/api/character?page=${currentPage}`
+      );
+
+      setCharData(response.data.results);
+      setPageData(response.data.info.pages);
+    };
+
     fetchData();
-  }, []);
+  }, [currentPage]);
 
   return (
     <div className={styles.container}>
