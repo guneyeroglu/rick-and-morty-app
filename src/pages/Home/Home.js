@@ -12,6 +12,7 @@ import styles from './Home.module.scss';
 
 const Home = () => {
   const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
       <SideTitle />
