@@ -5,5 +5,7 @@ export const tr = {
     episodesNav: 'Bölümler',
     locationsNav: 'Lokasyonlar',
     favoriteCharNav: 'Favori Karakterler',
+    homeExplanation: 'Favori Rick and Morty karakterini bul...',
+    searchPlaceholder: 'Ara...',
   },
 };
