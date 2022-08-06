@@ -2,11 +2,13 @@ import React from 'react';
 import MainLogo from './MainLogo';
 import ArrowLogo from './ArrowLogo';
 import SettingsLogo from './SettingsLogo';
+import MagnifyingGlass from './MagnifyingGlass';
 
 const logos = {
   MainLogo: <MainLogo />,
   ArrowLogo: <ArrowLogo />,
   SettingsLogo: <SettingsLogo />,
+  MagnifyingGlass: <MagnifyingGlass />,
 };
 
 const Icon = (props) => {
