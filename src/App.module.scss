@@ -1,20 +1,22 @@
 * {
   box-sizing: border-box;
+
   &::after {
     box-sizing: border-box;
   }
+
   &::before {
     box-sizing: border-box;
   }
+}
+
+::selection {
+  color: rgb(255, 152, 0);
+  background: rgb(32, 35, 41);
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #dddddd;
-}
-
-::selection {
-  color: white; // it will change
-  background: black; // it will change
 }
