@@ -5,6 +5,7 @@ import ArrowIcon from './ArrowIcon';
 import SettingsIcon from './SettingsIcon';
 import MagnifyingGlassIcon from './MagnifyingGlassIcon';
 import SortIcon from './SortIcon';
+import CircleCloseIcon from './CircleCloseIcon';
 
 const logos = {
   MainIcon: <MainIcon />,
@@ -12,6 +13,7 @@ const logos = {
   SettingsIcon: <SettingsIcon />,
   MagnifyingGlassIcon: <MagnifyingGlassIcon />,
   SortIcon: <SortIcon />,
+  CircleCloseIcon: <CircleCloseIcon />,
 };
 
 const Icon = (props) => {
