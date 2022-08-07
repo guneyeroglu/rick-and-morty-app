@@ -1,0 +1,140 @@
+.card {
+  flex: 0 1 25%;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5rem;
+    background-color: #3b3e43;
+    margin: 0 1rem 1rem 0;
+
+    .photo {
+      flex: 0 1 40%;
+      border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 0 1 60%;
+      position: relative;
+      padding: 0 0 0 1rem;
+
+      &__head {
+        padding: 1rem 0 0 0;
+
+        .title {
+          margin: 0 0 0.5rem 0;
+
+          span {
+            font-family: Roboto;
+            font-size: 1rem;
+            color: #fff;
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 0.25rem;
+
+          &__status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+
+            .dot {
+              width: 7px;
+              height: 7px;
+              background-color: #000;
+              border-radius: 50%;
+            }
+
+            span {
+              font-family: Roboto;
+              font-size: 0.8rem;
+              color: #fff;
+              opacity: 0.9;
+            }
+          }
+        }
+      }
+
+      &__body {
+        padding: 1rem 0;
+
+        span {
+          font-family: Roboto;
+          font-size: 0.8rem;
+          color: #fff;
+          opacity: 0.9;
+        }
+      }
+
+      &__foot {
+        padding: 0 0 1rem 0;
+
+        .title {
+          margin: 0 0 0.25rem 0;
+
+          span {
+            font-family: Roboto;
+            font-size: 0.8rem;
+            color: #9a9a9a;
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: row;
+          gap: 0.25rem;
+
+          span {
+            font-family: Roboto;
+            font-size: 0.8rem;
+            color: #fff;
+          }
+        }
+      }
+
+      &__favorite {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1rem 1rem 0 0;
+        background-color: #fff;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          img {
+            opacity: 1 !important;
+            filter: grayscale(0) !important;
+          }
+        }
+      }
+    }
+  }
+}
