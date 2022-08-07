@@ -1,5 +1,7 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
+import Icon from '../../components/Icons/Icon';
 import SideTitle from '../../components/SideTitle/SideTitle';
 import Search from '../../components/Search/Search';
 
@@ -10,8 +12,13 @@ import photo from '../../assets/images/r-m-photo.png';
 
 import styles from './Home.module.scss';
 
-const Home = () => {
+const Home = (props) => {
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
+  const handleNavigateChar = () => {
+    navigate('/characters');
+  };
 
   return (
     <div className={styles.container}>
@@ -24,7 +31,16 @@ const Home = () => {
           <div className={styles.main__explanation}>
             <span>{t('homeExplanation')}</span>
           </div>
-          <Search />
+          <Search value={props.value} onSearch={props.onSearch} />
+          <div className={styles.main__find}>
+            <div
+              className={styles.button}
+              style={{ display: props.value ? 'block' : 'none' }}
+              onClick={handleNavigateChar}
+            >
+              <Icon icon='ArrowIcon' fill='#3b3e43' />
+            </div>
+          </div>
         </div>
         <div className={styles.body}>
           <div className={styles.shadow}>
