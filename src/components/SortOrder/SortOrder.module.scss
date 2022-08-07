@@ -1,0 +1,26 @@
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  span {
+    font-family: Roboto;
+    font-size: 1rem;
+    color: #3b3e43;
+
+    &:hover {
+      color: #000;
+      cursor: pointer;
+    }
+  }
+
+  svg {
+    &:hover {
+      cursor: pointer;
+      path {
+        fill: #000;
+      }
+    }
+  }
+}
