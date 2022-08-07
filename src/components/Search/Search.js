@@ -12,8 +12,8 @@ const Search = (props) => {
     <div className={styles.search}>
       <input
         type={'text'}
-        value={props.a}
-        onChange={props.b}
+        value={props.value}
+        onChange={props.onSearch}
         placeholder={t('searchPlaceholder')}
       />
       <div className={styles.search__icon}>
