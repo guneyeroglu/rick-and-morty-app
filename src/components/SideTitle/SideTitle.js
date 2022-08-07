@@ -1,4 +1,5 @@
 import React from 'react';
+
 import SideTitleLineDot from './SideTitleLineDot';
 
 import styles from './SideTitle.module.scss';

@@ -4,10 +4,11 @@ import { Link, NavLink } from 'react-router-dom';
 import Icon from '../Icons/Icon';
 
 import logo from '../../assets/images/logo.png';
-import styles from './Header.module.scss';
 
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+
+import styles from './Header.module.scss';
 
 const Header = () => {
   const isActive = ({ isActive }) => {
@@ -31,6 +32,7 @@ const Header = () => {
   };
 
   const { t } = useTranslation();
+
   const headerList = [
     {
       id: '1234-Header-Home',

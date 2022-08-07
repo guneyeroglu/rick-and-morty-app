@@ -5,10 +5,10 @@ import Icon from '../../components/Icons/Icon';
 import SideTitle from '../../components/SideTitle/SideTitle';
 import Search from '../../components/Search/Search';
 
-import { useTranslation } from 'react-i18next';
-
 import portalGun from '../../assets/images/portal-gun.png';
 import photo from '../../assets/images/r-m-photo.png';
+
+import { useTranslation } from 'react-i18next';
 
 import styles from './Home.module.scss';
 
@@ -31,7 +31,11 @@ const Home = (props) => {
           <div className={styles.main__explanation}>
             <span>{t('homeExplanation')}</span>
           </div>
-          <Search value={props.value} onSearch={props.onSearch} />
+          <Search
+            value={props.value}
+            setValue={props.setValue}
+            onSearch={props.onSearch}
+          />
           <div className={styles.main__find}>
             <div
               className={styles.button}
