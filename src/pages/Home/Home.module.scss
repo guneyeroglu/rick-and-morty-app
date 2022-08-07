@@ -34,6 +34,27 @@
           color: #3b3e43;
         }
       }
+
+      &__find {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 44px;
+          border: 2px solid #3b3e43;
+          border-radius: 0.5rem;
+          padding: 0.5rem;
+          background-color: #fff;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
     }
 
     .body {
