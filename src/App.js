@@ -15,42 +15,25 @@ import './App.module.scss';
 
 const App = () => {
   const [searchValue, setSearchValue] = useState('');
-  const handleSearchValue = (event) => {
-    setSearchValue(event.target.value);
-  };
 
   return (
     <DataProvider>
-      <Header />
+      <Header onSetValue={setSearchValue} />
       <Routes>
         <Route
           path='/'
-          element={
-            <Home
-              value={searchValue}
-              setValue={setSearchValue}
-              onSearch={handleSearchValue}
-            />
-          }
+          element={<Home value={searchValue} onSetValue={setSearchValue} />}
         />
         <Route
           path='/characters'
           element={
-            <Characters
-              value={searchValue}
-              setValue={setSearchValue}
-              onSearch={handleSearchValue}
-            />
+            <Characters value={searchValue} onSetValue={setSearchValue} />
           }
         />
         <Route
           path='favoritechar'
           element={
-            <FavoriteChar
-              value={searchValue}
-              setValue={setSearchValue}
-              onSearch={handleSearchValue}
-            />
+            <FavoriteChar value={searchValue} onSetValue={setSearchValue} />
           }
         />
       </Routes>
