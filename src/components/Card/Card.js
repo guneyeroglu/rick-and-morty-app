@@ -54,10 +54,16 @@ const Card = ({ data }) => {
               <span>{char.location.name}</span>
             </div>
           </div>
-
           <div
             className={styles.content__favorite}
             onClick={() => onFavChar(char)}
+            style={{
+              display: favChar
+                .filter((item) => item.id === char.id)
+                .map((status) => status.fav)[0]
+                ? 'flex'
+                : 'none',
+            }}
           >
             <img
               src={like}
