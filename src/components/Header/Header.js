@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 import Icon from '../Icons/Icon';
 
@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 import styles from './Header.module.scss';
 
-const Header = () => {
+const Header = (props) => {
   const isActive = ({ isActive }) => {
     return isActive ? styles.active : '';
   };
@@ -32,6 +32,7 @@ const Header = () => {
   };
 
   const { t } = useTranslation();
+  const location = useLocation();
 
   const headerList = [
     {
@@ -61,6 +62,12 @@ const Header = () => {
     },
   ];
 
+  const handleNavigateSearch = (pathname) => {
+    if (pathname !== location.pathname) {
+      props.onSetValue('');
+    }
+  };
+
   return (
     <header className={styles.container}>
       <div className={styles.container__logo}>
@@ -72,7 +79,11 @@ const Header = () => {
         <ul>
           {headerList.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.to} className={isActive}>
+              <NavLink
+                to={link.to}
+                className={isActive}
+                onClick={() => handleNavigateSearch(link.to)}
+              >
                 {link.name}
               </NavLink>
             </li>
