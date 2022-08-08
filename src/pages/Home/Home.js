@@ -31,11 +31,7 @@ const Home = (props) => {
           <div className={styles.main__explanation}>
             <span>{t('homeExplanation')}</span>
           </div>
-          <Search
-            value={props.value}
-            setValue={props.setValue}
-            onSearch={props.onSearch}
-          />
+          <Search value={props.value} onSetValue={props.onSetValue} />
           <div className={styles.main__find}>
             <div
               className={styles.button}

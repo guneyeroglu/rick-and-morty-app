@@ -9,14 +9,14 @@ import styles from './Search.module.scss';
 const Search = (props) => {
   const { t } = useTranslation();
 
-  const { value, setValue, onSearch } = props;
+  const { value, onSetValue } = props;
 
   return (
     <div className={styles.search}>
       <input
         type={'text'}
         value={value}
-        onChange={onSearch}
+        onChange={(e) => onSetValue(e.target.value)}
         placeholder={t('searchPlaceholder')}
       />
       <div className={styles.search__icon}>
@@ -25,7 +25,7 @@ const Search = (props) => {
       <div
         className={styles.search__close}
         style={{ display: value ? 'block' : 'none' }}
-        onClick={() => setValue('')}
+        onClick={() => onSetValue('')}
       >
         <Icon icon={'CircleCloseIcon'} fill='black' />
       </div>
