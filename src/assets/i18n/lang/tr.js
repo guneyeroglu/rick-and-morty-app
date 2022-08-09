@@ -9,5 +9,10 @@ export const tr = {
     searchPlaceholder: 'Ara...',
     sortText: 'Varsayılan',
     charLastLocation: 'Bilinen son lokasyon:',
+    locationName: 'İsim',
+    locationType: 'Tip',
+    locationDimension: 'Boyut',
+    locationCreated: 'Oluşturulma',
+    locationAllChar: 'TÜM KARAKTERLERİ GÖR',
   },
 };

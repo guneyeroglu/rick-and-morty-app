@@ -9,5 +9,10 @@ export const en = {
     searchPlaceholder: 'Search...',
     sortText: 'Default',
     charLastLocation: 'Last known location:',
+    locationName: 'Name',
+    locationType: 'Type',
+    locationDimension: 'Dimension',
+    locationCreated: 'Created',
+    locationAllChar: 'SEE ALL CHAR',
   },
 };
