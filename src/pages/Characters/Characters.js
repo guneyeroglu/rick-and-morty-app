@@ -3,10 +3,10 @@ import axios from 'axios';
 
 import useSortOrder from '../../hooks/useSortOrder';
 
-import Card from '../../components/Card/Card';
+import CharCard from '../../components/Cards/CharCard/CharCard';
 import Search from '../../components/Search/Search';
 import SortOrder from '../../components/SortOrder/SortOrder';
-import Pagination from '@mui/material/Pagination';
+import Pagination from '../../components/Pagination/Pagination';
 
 import styles from './Characters.module.scss';
 
@@ -14,10 +14,6 @@ const Characters = (props) => {
   const [charData, setCharData] = useState([]);
   const [pageData, setPageData] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
-
-  const handleChangePage = (event, value) => {
-    setCurrentPage(value);
-  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,16 +45,13 @@ const Characters = (props) => {
               char.name.toLowerCase().includes(props.value.toLowerCase())
             )
             .sort(onSortOrder)
-            .map((char) => <Card data={char} key={char.id} />)}
+            .map((char) => <CharCard data={char} key={char.id} />)}
       </div>
-      <div className={styles.container__pagination}>
-        <Pagination
-          count={pageData}
-          shape='rounded'
-          page={currentPage}
-          onChange={handleChangePage}
-        />
-      </div>
+      <Pagination
+        pageData={pageData}
+        currentPage={currentPage}
+        onSetCurrentPage={setCurrentPage}
+      />
     </div>
   );
 };
