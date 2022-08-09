@@ -1,13 +1,13 @@
 import { useContext } from 'react';
-import DataContext from '../../store/Context/ContextFav';
+import DataContext from '../../../store/Context/ContextFav';
 
 import { useTranslation } from 'react-i18next';
 
-import like from '../../assets/images/like.png';
+import like from '../../../assets/images/like.png';
 
-import styles from './Card.module.scss';
+import styles from './CharCard.module.scss';
 
-const Card = ({ data }) => {
+const CharCard = ({ data }) => {
   const char = data;
 
   const { favChar, onFavChar } = useContext(DataContext);
@@ -88,4 +88,4 @@ const Card = ({ data }) => {
   );
 };
 
-export default Card;
+export default CharCard;
