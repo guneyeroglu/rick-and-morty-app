@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Characters from './pages/Characters/Characters';
 import FavoriteChar from './pages/FavoriteChar/FavoriteChar';
+import Locations from './pages/Locations/Locations';
 
 import './assets/i18n/index';
 
@@ -30,6 +31,7 @@ const App = () => {
             <Characters value={searchValue} onSetValue={setSearchValue} />
           }
         />
+        <Route path='/locations' element={<Locations />} />
         <Route
           path='favoritechar'
           element={
