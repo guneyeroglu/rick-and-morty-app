@@ -14,5 +14,6 @@ export const en = {
     locationDimension: 'Dimension',
     locationCreated: 'Created',
     locationAllChar: 'SEE ALL CHAR',
+    notFound: 'NOTFOUND',
   },
 };

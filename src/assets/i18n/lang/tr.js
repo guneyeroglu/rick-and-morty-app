@@ -14,5 +14,6 @@ export const tr = {
     locationDimension: 'Boyut',
     locationCreated: 'Oluşturulma',
     locationAllChar: 'TÜM KARAKTERLERİ GÖR',
+    notFound: 'BULUNAMADI',
   },
 };
