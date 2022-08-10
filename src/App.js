@@ -9,6 +9,7 @@ import Home from './pages/Home/Home';
 import Characters from './pages/Characters/Characters';
 import FavoriteChar from './pages/FavoriteChar/FavoriteChar';
 import Locations from './pages/Locations/Locations';
+import NotFound from './pages/NotFound/NotFound';
 
 import './assets/i18n/index';
 
@@ -38,6 +39,7 @@ const App = () => {
             <FavoriteChar value={searchValue} onSetValue={setSearchValue} />
           }
         />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </DataProvider>
   );
