@@ -13,7 +13,10 @@ export const tr = {
     locationType: 'Tip',
     locationDimension: 'Boyut',
     locationCreated: 'Oluşturulma',
-    locationAllChar: 'TÜM KARAKTERLERİ GÖR',
+    locationAllChar: 'Karakter Bilgileri',
+    locationCharContent: 'TÜM KARAKTERLERİ GÖR',
     notFound: 'BULUNAMADI',
+    dialogCharTitle: 'TÜM KARAKTERLER',
+    dialogNoData: 'VERİ BULUNAMADI',
   },
 };

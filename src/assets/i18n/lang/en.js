@@ -13,7 +13,10 @@ export const en = {
     locationType: 'Type',
     locationDimension: 'Dimension',
     locationCreated: 'Created',
-    locationAllChar: 'SEE ALL CHAR',
+    locationAllChar: 'Char Info',
+    locationCharContent: 'SEE ALL CHAR',
     notFound: 'NOTFOUND',
+    dialogCharTitle: 'ALL CHAR',
+    dialogNoData: 'NO DATA',
   },
 };
