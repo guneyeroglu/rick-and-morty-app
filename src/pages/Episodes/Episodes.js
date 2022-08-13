@@ -4,7 +4,7 @@ import Dialog from '../../components/Dialog/Dialog';
 const Episodes = () => {
   return (
     <div>
-      <Dialog />
+      <div></div>
     </div>
   );
 };
