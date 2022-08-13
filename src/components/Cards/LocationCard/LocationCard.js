@@ -1,46 +1,43 @@
-import React from 'react';
+import { useState } from 'react';
 
-import { useTranslation } from 'react-i18next';
+import { Paper, Table, TableContainer } from '@mui/material';
 
-import styles from './LocationCard.module.scss';
+import LocationCardHeader from './LocationCardHeader';
+import LocationCardBody from './LocationCardBody';
+import Dialog from '../../Dialog/Dialog';
 
-const LocationCard = ({ data }) => {
-  const location = data;
-  const { t } = useTranslation();
+const LocationCard = (props) => {
+  const [open, setOpen] = useState(false);
+  const [informations, setInformations] = useState('');
 
-  const index = location.created.indexOf('T');
-  const created = location.created.slice(0, index);
+  let digit = /\d+/;
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleOpen = (info) => {
+    setOpen(true);
+
+    let uri = '';
+
+    for (let i of info) {
+      uri += i.match(digit)[0] + ',';
+    }
+
+    setInformations(uri);
+  };
 
   return (
-    <div className={styles.card}>
-      <div className={styles.card__item}>
-        <div className={styles.content}>
-          <div className={styles.content__name}>
-            <span>
-              {t('locationName')}: {location.name}
-            </span>
-          </div>
-          <div className={styles.content__type}>
-            <span>
-              {t('locationType')}: {location.type}
-            </span>
-          </div>
-          <div className={styles.content__info}>
-            <span>
-              {t('locationDimension')}: {location.dimension}
-            </span>
-          </div>
-          <div className={styles.content__info}>
-            <span>
-              {t('locationCreated')}: {created}
-            </span>
-          </div>
-        </div>
-        <div className={styles.chars}>
-          <span>{t('locationAllChar')}</span>
-        </div>
-      </div>
-    </div>
+    <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+      <TableContainer sx={{ maxHeight: 750 }}>
+        <Table stickyHeader aria-label='sticky table'>
+          <LocationCardHeader {...props} />
+          <LocationCardBody {...props} onOpen={handleOpen} />
+        </Table>
+      </TableContainer>
+      <Dialog onClose={handleClose} open={open} informations={informations} />
+    </Paper>
   );
 };
 
