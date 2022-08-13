@@ -9,6 +9,7 @@ import Home from './pages/Home/Home';
 import Characters from './pages/Characters/Characters';
 import FavoriteChar from './pages/FavoriteChar/FavoriteChar';
 import Locations from './pages/Locations/Locations';
+import Episodes from './pages/Episodes/Episodes';
 import NotFound from './pages/NotFound/NotFound';
 
 import './assets/i18n/index';
@@ -33,6 +34,7 @@ const App = () => {
           }
         />
         <Route path='/locations' element={<Locations />} />
+        <Route path='/episodes' element={<Episodes />} />
         <Route
           path='favoritechar'
           element={
