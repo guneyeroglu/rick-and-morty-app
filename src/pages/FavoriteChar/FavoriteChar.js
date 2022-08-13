@@ -12,7 +12,7 @@ import styles from './FavoriteChar.module.scss';
 const FavoriteChar = (props) => {
   const { favChar } = useContext(DataContext);
 
-  const { sort, onSetSort, onSortOrder } = useSortOrder('default');
+  const { sort, onSetSort, onSortOrder } = useSortOrder('default', 'name');
 
   return (
     <div className={styles.container}>

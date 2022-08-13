@@ -28,7 +28,7 @@ const Characters = (props) => {
     fetchData();
   }, [currentPage]);
 
-  const { sort, onSetSort, onSortOrder } = useSortOrder('default');
+  const { sort, onSetSort, onSortOrder } = useSortOrder('default', 'name');
 
   return (
     <div className={styles.container}>
