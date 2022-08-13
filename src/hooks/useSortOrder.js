@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-const useSortOrder = (value) => {
+const useSortOrder = (value, name) => {
   const [sort, setSort] = useState(value);
 
   const handleSortOrder = (a, b) => {
     if (sort === 'a-z') {
-      return a.name.localeCompare(b.name);
+      return a[name].localeCompare(b[name]);
     } else if (sort === 'z-a') {
-      return b.name.localeCompare(a.name);
+      return b[name].localeCompare(a[name]);
     }
     return a - b;
   };
