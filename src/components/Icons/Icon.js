@@ -10,6 +10,7 @@ import UpArrowIcon from './UpArrowIcon';
 import DownArrowIcon from './DownArrowIcon';
 import LinkedInIcon from './LinkedInIcon';
 import GitHubIcon from './GitHubIcon';
+import HamburgerIcon from './HamburgerIcon';
 
 const logos = {
   MainIcon: <MainIcon />,
@@ -22,6 +23,7 @@ const logos = {
   DownArrowIcon: <DownArrowIcon />,
   LinkedInIcon: <LinkedInIcon />,
   GitHubIcon: <GitHubIcon />,
+  HamburgerIcon: <HamburgerIcon />,
 };
 
 const Icon = (props) => {
