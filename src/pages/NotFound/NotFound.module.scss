@@ -9,3 +9,37 @@
     color: #fff;
   }
 }
+
+@media (max-width: 768px) {
+  .container__content {
+    border-radius: 0.5rem;
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container__content {
+    span {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .container__content {
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .container__content {
+    span {
+      font-size: 0.9rem;
+    }
+  }
+}

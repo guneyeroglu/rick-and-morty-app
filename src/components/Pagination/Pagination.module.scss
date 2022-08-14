@@ -4,3 +4,16 @@
   justify-content: center;
   margin: 1rem 0;
 }
+
+@media (max-width: 400px) {
+  .pagination {
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 30px !important;
+      height: 30px;
+    }
+  }
+}

@@ -102,3 +102,45 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    &__image {
+      width: 500px;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    &__image {
+      width: 300px;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    &__image {
+      width: 250px;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

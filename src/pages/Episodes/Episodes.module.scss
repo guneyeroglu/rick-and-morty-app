@@ -1,5 +1,6 @@
 .container {
-  width: 1400px;
+  max-width: 1400px;
+  width: auto;
   margin: 5rem auto;
 
   &__main {
