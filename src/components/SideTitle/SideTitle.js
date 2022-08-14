@@ -1,9 +1,9 @@
 import React from 'react';
 
 import SideTitleLineDot from './SideTitleLineDot';
+import Icon from '../Icons/Icon';
 
 import styles from './SideTitle.module.scss';
-import Icon from '../Icons/Icon';
 
 const SideTitle = () => {
   return (
