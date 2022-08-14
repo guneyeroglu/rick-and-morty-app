@@ -7,6 +7,7 @@ import CharCard from '../../components/Cards/CharCard/CharCard';
 import Search from '../../components/Search/Search';
 import SortOrder from '../../components/SortOrder/SortOrder';
 import Pagination from '../../components/Pagination/Pagination';
+import NoData from '../../components/NoData/NoData';
 
 import styles from './Characters.module.scss';
 
@@ -30,6 +31,10 @@ const Characters = (props) => {
 
   const { sort, onSetSort, onSortOrder } = useSortOrder('default', 'name');
 
+  const length = charData.filter((char) =>
+    char.name.toLowerCase().includes(props.value.toLowerCase())
+  ).length;
+
   return (
     <div className={styles.container}>
       <div className={styles.container__filter}>
@@ -46,6 +51,7 @@ const Characters = (props) => {
             )
             .sort(onSortOrder)
             .map((char) => <CharCard data={char} key={char.id} />)}
+        {length === 0 && <NoData />}
       </div>
       <Pagination
         pageData={pageData}
