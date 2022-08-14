@@ -15,6 +15,10 @@ const FavoriteChar = (props) => {
 
   const { sort, onSetSort, onSortOrder } = useSortOrder('default', 'name');
 
+  const length = favChar.filter((char) =>
+    char.name.toLowerCase().includes(props.value.toLowerCase())
+  ).length;
+
   return (
     <div className={styles.container}>
       {favChar.length !== 0 && (
@@ -37,6 +41,7 @@ const FavoriteChar = (props) => {
         {favChar.length === 0 && (
           <NoData url='/characters' text={'charactersNav'} />
         )}
+        {favChar.length > 0 && length === 0 && <NoData />}
       </div>
     </div>
   );
