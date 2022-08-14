@@ -1,6 +1,6 @@
 # Rick and Morty Website App
 
-<img width="1535" height="900" alt="Ekran Resmi 2022-08-14 22 37 57" src="https://user-images.githubusercontent.com/93340900/184552275-26b58cb6-a8b2-4b02-82ed-f16852a84bea.png">
+<img width="1535" height="750" alt="Ekran Resmi 2022-08-14 22 37 57" src="https://user-images.githubusercontent.com/93340900/184552275-26b58cb6-a8b2-4b02-82ed-f16852a84bea.png">
 
 #
 
