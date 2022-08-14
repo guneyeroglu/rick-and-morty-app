@@ -72,6 +72,12 @@ const Header = (props) => {
     }
   };
 
+  const handleNavigateIcon = (pathname) => {
+    if (pathname !== location.pathname) {
+      props.onSetValue('');
+    }
+  };
+
   const handleHamburger = () => {
     setHamburgerOpen(!hambugerOpen);
   };
@@ -89,7 +95,7 @@ const Header = (props) => {
   return (
     <header className={styles.container}>
       <div className={styles.container__logo}>
-        <Link to={'/'}>
+        <Link to={'/'} onClick={() => handleNavigateIcon('/')}>
           <img src={logo} alt='main-logo' />
         </Link>
       </div>
