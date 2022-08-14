@@ -36,7 +36,7 @@ const App = () => {
         <Route path='/locations' element={<Locations />} />
         <Route path='/episodes' element={<Episodes />} />
         <Route
-          path='favoritechar'
+          path='/favoritechar'
           element={
             <FavoriteChar value={searchValue} onSetValue={setSearchValue} />
           }
