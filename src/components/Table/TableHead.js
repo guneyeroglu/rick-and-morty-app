@@ -16,8 +16,6 @@ const TableHead = ({ onSort, onSortName, data }) => {
     [columns[3].filter]: true,
   });
 
-  console.log(orderState);
-
   const handleSortOrder = (column) => {
     if (column.id !== 5) {
       orderState[column.filter] ? onSort('a-z') : onSort('z-a');
