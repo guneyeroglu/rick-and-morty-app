@@ -3,22 +3,22 @@ import { TableBody as TB, TableCell, TableRow } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 const TableBody = ({ data, onSortOrder, onOpen }) => {
-  const locations = data.locations;
+  const allData = data.results;
   const cells = data.cells;
 
   const { t } = useTranslation();
 
   return (
     <TB>
-      {locations.sort(onSortOrder).map((location) => {
-        const index = location.created.indexOf('T');
-        const created = location.created.slice(0, index);
+      {allData.sort(onSortOrder).map((data) => {
+        const index = data.created.indexOf('T');
+        const created = data.created.slice(0, index);
         return (
           <TableRow
             hover
             role='checkbox'
             tabIndex={-1}
-            key={location.id}
+            key={data.id}
             sx={{
               backgroundColor: '#3b3e43',
               ':hover': {
@@ -34,7 +34,7 @@ const TableBody = ({ data, onSortOrder, onOpen }) => {
                   sx={{ color: '#fff', fontFamily: 'Roboto' }}
                   key={cell.id}
                 >
-                  {cell.id !== 4 ? location[cell.filter] : created}
+                  {cell.id !== 4 ? data[cell.filter] : created}
                 </TableCell>
               ))}
             <TableCell
@@ -49,7 +49,7 @@ const TableBody = ({ data, onSortOrder, onOpen }) => {
                   cursor: 'pointer',
                 },
               }}
-              onClick={() => onOpen(location[cells[4].filter])}
+              onClick={() => onOpen(data[cells[4].filter])}
             >
               {t('cellCharContent')}
             </TableCell>
