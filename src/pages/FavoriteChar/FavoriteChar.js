@@ -38,10 +38,18 @@ const FavoriteChar = (props) => {
           .map((char) => (
             <Card data={char} key={char.id} />
           ))}
+
         {favChar.length === 0 && (
-          <NoData url='/characters' text={'charactersNav'} />
+          <div style={{ width: '100%', paddingRight: '1rem' }}>
+            <NoData url='/characters' text={'charactersNav'} />
+          </div>
         )}
-        {favChar.length > 0 && length === 0 && <NoData />}
+
+        {favChar.length > 0 && length === 0 && (
+          <div style={{ width: '100%', paddingRight: '1rem' }}>
+            <NoData />
+          </div>
+        )}
       </div>
     </div>
   );

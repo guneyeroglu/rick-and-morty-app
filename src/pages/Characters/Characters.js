@@ -51,7 +51,9 @@ const Characters = (props) => {
             )
             .sort(onSortOrder)
             .map((char) => <CharCard data={char} key={char.id} />)}
-        {length === 0 && <NoData />}
+        <div style={{ width: '100%', paddingRight: '1rem' }}>
+          {length === 0 && <NoData />}
+        </div>
       </div>
       <Pagination
         pageData={pageData}
