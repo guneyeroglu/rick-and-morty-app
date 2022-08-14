@@ -11,8 +11,6 @@ const useTable = () => {
   };
 
   const handleOpen = (info) => {
-    setOpen(true);
-
     let uri = '';
 
     for (let i of info) {
@@ -20,6 +18,7 @@ const useTable = () => {
     }
 
     setInformations(uri);
+    setOpen(true);
   };
 
   return {
