@@ -1,0 +1,11 @@
+.container {
+  width: 1400px;
+  margin: 5rem auto;
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 2rem 0;
+  }
+}
