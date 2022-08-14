@@ -59,8 +59,10 @@
 
     .body {
       filter: drop-shadow(-1rem 1rem 5rem #4cf722);
+
       .shadow {
         filter: drop-shadow(0 0rem 0.5rem #000);
+
         img {
           filter: drop-shadow(1rem 1rem 2.5rem #c1fd7c);
           transition: transform 0.25s ease-in-out;
@@ -74,9 +76,15 @@
   }
 
   &__picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex: 0 1 50%;
+
     .shadow {
       filter: drop-shadow(0 0rem 0.5rem #000);
+
       img {
         animation: drop-shadow 10s ease-in-out infinite;
         transition: transform 0.25s ease-in-out;

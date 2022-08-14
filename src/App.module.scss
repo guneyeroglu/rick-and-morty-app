@@ -15,12 +15,12 @@
   background: #3b3e43;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #dddddd;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
