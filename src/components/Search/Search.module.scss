@@ -6,7 +6,7 @@
     height: 30px;
     border: 2px solid #3b3e43;
     border-radius: 0.5rem;
-    padding: 1rem 0.5rem 1rem 2.5rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
     background-color: #fff;
     color: #3b3e43;
 
@@ -47,6 +47,10 @@
 
     input {
       width: 90%;
+    }
+
+    &__close {
+      margin: 0.35rem 2rem 0 0;
     }
   }
 }
