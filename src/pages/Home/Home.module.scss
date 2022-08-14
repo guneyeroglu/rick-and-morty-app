@@ -74,6 +74,8 @@
           img {
             filter: drop-shadow(1rem 1rem 2.5rem #c1fd7c);
             transition: transform 0.25s ease-in-out;
+            width: 300px;
+            height: 350px;
 
             &:hover {
               transform: scale(1.05);
@@ -96,6 +98,8 @@
         img {
           animation: drop-shadow 10s ease-in-out infinite;
           transition: transform 0.25s ease-in-out;
+          width: 1000px;
+          height: auto;
 
           &:hover {
             transform: scale(1.025);
@@ -152,119 +156,10 @@
   }
 }
 
-@media (max-width: 2560px) {
-  .container {
-    .wrapper {
-      &__search {
-        .main {
-          &__title {
-            span {
-              font-family: Roboto;
-              font-size: 5rem;
-              color: #3b3e43;
-            }
-          }
-
-          &__explanation {
-            border-left: 2px solid #3b3e43;
-            padding: 1rem 0 1rem 1rem;
-
-            span {
-              font-family: Roboto;
-              font-size: 1.25rem;
-              color: #3b3e43;
-            }
-          }
-
-          &__find {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            .button {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 44px;
-              border: 2px solid #3b3e43;
-              border-radius: 0.5rem;
-              padding: 0.5rem;
-              background-color: #fff;
-
-              &:hover {
-                cursor: pointer;
-              }
-            }
-          }
-        }
-
-        .body {
-          .shadow {
-            img {
-              width: 300px;
-              height: 350px;
-            }
-          }
-        }
-      }
-      &__picture {
-        .shadow {
-          img {
-            width: 1000px;
-            height: auto;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 1800px) {
   .container {
     .wrapper {
       &__search {
-        .main {
-          &__title {
-            span {
-              font-family: Roboto;
-              font-size: 5rem;
-              color: #3b3e43;
-            }
-          }
-
-          &__explanation {
-            border-left: 2px solid #3b3e43;
-            padding: 1rem 0 1rem 1rem;
-
-            span {
-              font-family: Roboto;
-              font-size: 1.25rem;
-              color: #3b3e43;
-            }
-          }
-
-          &__find {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            .button {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 44px;
-              border: 2px solid #3b3e43;
-              border-radius: 0.5rem;
-              padding: 0.5rem;
-              background-color: #fff;
-
-              &:hover {
-                cursor: pointer;
-              }
-            }
-          }
-        }
-
         .body {
           .shadow {
             img {
@@ -274,6 +169,7 @@
           }
         }
       }
+
       &__picture {
         .shadow {
           img {
@@ -295,41 +191,15 @@
         .main {
           &__title {
             span {
-              font-family: Roboto;
               font-size: 3rem;
-              color: #3b3e43;
             }
           }
 
           &__explanation {
-            border-left: 2px solid #3b3e43;
-            padding: 1rem 0 1rem 1rem;
-
             span {
               font-family: Roboto;
               font-size: 1rem;
               color: #3b3e43;
-            }
-          }
-
-          &__find {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            .button {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 44px;
-              border: 2px solid #3b3e43;
-              border-radius: 0.5rem;
-              padding: 0.5rem;
-              background-color: #fff;
-
-              &:hover {
-                cursor: pointer;
-              }
             }
           }
         }
@@ -343,6 +213,7 @@
           }
         }
       }
+
       &__picture {
         .shadow {
           img {
@@ -360,58 +231,6 @@
     .wrapper {
       gap: 0;
 
-      &__search {
-        .main {
-          &__title {
-            span {
-              font-family: Roboto;
-              font-size: 3rem;
-              color: #3b3e43;
-            }
-          }
-
-          &__explanation {
-            border-left: 2px solid #3b3e43;
-            padding: 1rem 0 1rem 1rem;
-
-            span {
-              font-family: Roboto;
-              font-size: 1rem;
-              color: #3b3e43;
-            }
-          }
-
-          &__find {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            .button {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 44px;
-              border: 2px solid #3b3e43;
-              border-radius: 0.5rem;
-              padding: 0.5rem;
-              background-color: #fff;
-
-              &:hover {
-                cursor: pointer;
-              }
-            }
-          }
-        }
-
-        .body {
-          .shadow {
-            img {
-              width: 200px;
-              height: 250px;
-            }
-          }
-        }
-      }
       &__picture {
         .shadow {
           img {
@@ -435,61 +254,13 @@
         gap: 0;
         flex: 0 0;
 
-        .main {
-          &__title {
-            span {
-              font-family: Roboto;
-              font-size: 3rem;
-              color: #3b3e43;
-            }
-          }
-
-          &__explanation {
-            border-left: 2px solid #3b3e43;
-            padding: 1rem 0 1rem 1rem;
-
-            span {
-              font-family: Roboto;
-              font-size: 1rem;
-              color: #3b3e43;
-            }
-          }
-
-          &__find {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            .button {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 44px;
-              border: 2px solid #3b3e43;
-              border-radius: 0.5rem;
-              padding: 0.5rem;
-              background-color: #fff;
-
-              &:hover {
-                cursor: pointer;
-              }
-            }
-          }
-        }
-
         .body {
           display: none;
         }
       }
+
       &__picture {
         flex: 0 0;
-
-        .shadow {
-          img {
-            width: 500px;
-            height: auto;
-          }
-        }
       }
     }
   }

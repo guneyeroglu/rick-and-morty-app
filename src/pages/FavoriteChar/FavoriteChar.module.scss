@@ -20,3 +20,27 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 2rem 1rem;
+
+    &__filter {
+      .search {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    margin: 2rem 0.25rem;
+
+    &__filter {
+      .search {
+        width: 200px;
+      }
+    }
+  }
+}

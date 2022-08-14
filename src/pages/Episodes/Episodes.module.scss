@@ -10,3 +10,9 @@
     margin: 0 0 2rem 0;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 5rem 0.5rem;
+  }
+}
