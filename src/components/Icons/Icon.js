@@ -8,6 +8,8 @@ import SortIcon from './SortIcon';
 import CircleCloseIcon from './CircleCloseIcon';
 import UpArrowIcon from './UpArrowIcon';
 import DownArrowIcon from './DownArrowIcon';
+import LinkedInIcon from './LinkedInIcon';
+import GitHubIcon from './GitHubIcon';
 
 const logos = {
   MainIcon: <MainIcon />,
@@ -18,12 +20,14 @@ const logos = {
   CircleCloseIcon: <CircleCloseIcon />,
   UpArrowIcon: <UpArrowIcon />,
   DownArrowIcon: <DownArrowIcon />,
+  LinkedInIcon: <LinkedInIcon />,
+  GitHubIcon: <GitHubIcon />,
 };
 
 const Icon = (props) => {
   const name = props.icon;
   const fill = props.fill;
-  const wh = props.wh ? props.wh : 24;
+  const wh = props.wh ?? 24;
   return (
     <svg
       width={wh}
