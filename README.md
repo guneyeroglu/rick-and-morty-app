@@ -1,4 +1,4 @@
-# Rick and Morty Website App
+# [Rick and Morty Website App](https://rick-and-morty-wiki-website.netlify.app/)
 
 <img width="1535" height="750" alt="Ekran Resmi 2022-08-14 22 37 57" src="https://user-images.githubusercontent.com/93340900/184552275-26b58cb6-a8b2-4b02-82ed-f16852a84bea.png">
 
@@ -35,7 +35,7 @@ Here are some of the tools I use
 #### - Axios for fetch
 #### - React Hooks for data & state management
 #### - SCSS for styling
-#### - i18next & i18n-react for multi-language (EN | TR)
+#### - i18next & react-i18next for multi-language (EN | TR)
 
 #
 
