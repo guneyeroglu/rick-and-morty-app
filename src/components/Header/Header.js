@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 import Icon from '../Icons/Icon';
 
 import logo from '../../assets/images/logo.png';
 
 import i18next from 'i18next';
+
 import { useTranslation } from 'react-i18next';
 
 import styles from './Header.module.scss';
@@ -16,6 +19,7 @@ const Header = (props) => {
   };
 
   const [openSettings, setOpenSettings] = useState(false);
+  const [hambugerOpen, setHamburgerOpen] = useState(false);
 
   const styleSettings = openSettings
     ? { display: 'block' }
@@ -68,12 +72,31 @@ const Header = (props) => {
     }
   };
 
+  const handleHamburger = () => {
+    setHamburgerOpen(!hambugerOpen);
+  };
+
+  const media = useMediaQuery('(max-width: 600px)');
+
+  const handleHamburgerNavigateSearch = (pathname) => {
+    if (pathname !== location.pathname) {
+      props.onSetValue('');
+    }
+
+    setTimeout(() => setHamburgerOpen(false), 100);
+  };
+
   return (
     <header className={styles.container}>
       <div className={styles.container__logo}>
         <Link to={'/'}>
           <img src={logo} alt='main-logo' />
         </Link>
+      </div>
+      <div className={styles.container__hamburger}>
+        <button onClick={handleHamburger}>
+          <Icon icon='HamburgerIcon' fill='#3b3e43' />
+        </button>
       </div>
       <nav className={styles.container__nav}>
         <ul>
@@ -137,6 +160,24 @@ const Header = (props) => {
           </div>
         </div>
       </div>
+      <nav
+        className={styles.container__nav_2}
+        style={{ display: hambugerOpen && media ? 'flex' : 'none' }}
+      >
+        <ul>
+          {headerList.map((link) => (
+            <li key={link.id}>
+              <NavLink
+                to={link.to}
+                className={isActive}
+                onClick={() => handleHamburgerNavigateSearch(link.to)}
+              >
+                {link.name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 };
