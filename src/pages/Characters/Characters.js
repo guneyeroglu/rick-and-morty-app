@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import useSortOrder from '../../hooks/useSortOrder';
 
-import CharCard from '../../components/Cards/CharCard/CharCard';
+import CardChar from '../../components/Cards/CardChar/CardChar';
 import Search from '../../components/Search/Search';
 import SortOrder from '../../components/SortOrder/SortOrder';
 import Pagination from '../../components/Pagination/Pagination';
@@ -50,7 +50,7 @@ const Characters = (props) => {
               char.name.toLowerCase().includes(props.value.toLowerCase())
             )
             .sort(onSortOrder)
-            .map((char) => <CharCard data={char} key={char.id} />)}
+            .map((char) => <CardChar data={char} key={char.id} />)}
         <div style={{ width: '100%', paddingRight: '1rem' }}>
           {length === 0 && <NoData />}
         </div>

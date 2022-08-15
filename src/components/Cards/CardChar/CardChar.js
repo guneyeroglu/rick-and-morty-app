@@ -5,9 +5,9 @@ import { useTranslation } from 'react-i18next';
 
 import like from '../../../assets/images/like.png';
 
-import styles from './CharCard.module.scss';
+import styles from './CardChar.module.scss';
 
-const CharCard = ({ data }) => {
+const CardChar = ({ data }) => {
   const char = data;
 
   const { favChar, onFavChar } = useContext(DataContext);
@@ -88,4 +88,4 @@ const CharCard = ({ data }) => {
   );
 };
 
-export default CharCard;
+export default CardChar;

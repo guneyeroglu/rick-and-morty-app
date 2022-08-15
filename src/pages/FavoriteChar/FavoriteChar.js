@@ -3,7 +3,7 @@ import DataContext from '../../store/Context/ContextFav';
 
 import useSortOrder from '../../hooks/useSortOrder';
 
-import Card from '../../components/Cards/CharCard/CharCard';
+import CardChar from '../../components/Cards/CardChar/CardChar';
 import Search from '../../components/Search/Search';
 import SortOrder from '../../components/SortOrder/SortOrder';
 import NoData from '../../components/NoData/NoData';
@@ -36,7 +36,7 @@ const FavoriteChar = (props) => {
           )
           .sort(onSortOrder)
           .map((char) => (
-            <Card data={char} key={char.id} />
+            <CardChar data={char} key={char.id} />
           ))}
 
         {favChar.length === 0 && (

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { DialogTitle, Dialog as D, DialogContent } from '@mui/material';
 
-import CharCard from '../Cards/CharCard/CharCard';
+import CardChar from '../Cards/CardChar/CardChar';
 
 import styles from './Dialog.module.scss';
 import { useTranslation } from 'react-i18next';
@@ -40,7 +40,7 @@ const Dialog = (props) => {
           }}
         >
           {charData.length > 0 &&
-            charData.map((char) => <CharCard data={char} key={char.id} />)}
+            charData.map((char) => <CardChar data={char} key={char.id} />)}
           {informations.length === 0 && (
             <div className={styles.empty}>
               <span>{t('dialogNoData')}</span>

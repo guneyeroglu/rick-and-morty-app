@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import TableCard from '../../components/Cards/TableCard/TableCard';
+import CardTable from '../../components/Cards/CardTable/CardTable';
 import Pagination from '../../components/Pagination/Pagination';
 
 import useSortOrder from '../../hooks/useSortOrder';
@@ -44,7 +44,7 @@ const Episodes = () => {
   return (
     <div className={styles.container}>
       <div className={styles.container__main}>
-        <TableCard
+        <CardTable
           data={{ results: episodeData, cells: cells }}
           onSort={onSetSort}
           onSortOrder={onSortOrder}
