@@ -1,4 +1,4 @@
-# [Rick and Morty Website App](https://rick-and-morty-wiki-website.netlify.app/)
+# [Rick and Morty Website App](https://rickandmorty-wikiapp.netlify.app/)
 
 <img width="1535" height="750" alt="Ekran Resmi 2022-08-14 22 37 57" src="https://user-images.githubusercontent.com/93340900/184552275-26b58cb6-a8b2-4b02-82ed-f16852a84bea.png">
 
@@ -43,7 +43,7 @@ Here are some of the tools I use
 
 ### - Netlify
 
-I preferred Netlify for the deployment phase. You can access it via this [link](https://rick-and-morty-wiki-website.netlify.app/).
+I preferred Netlify for the deployment phase. You can access it via this [link](https://rickandmorty-wikiapp.netlify.app/).
 
 ### - Localhost
 
@@ -59,7 +59,7 @@ When you get the notification which shows that the terminal is running successfu
 
 ### THANKS 
 
-This project was developed by [Güney Eroğlu](https://www.linkedin.com/in/guneyeroglu/) for [Kodluyoruz](https://www.kodluyoruz.org/). I want to thank the Kodluyoruz Team for giving us this opportunity, our trainer Tolga for sharing his knowledge and experience with us, and the assistant group for their support.
+This project was developed by [Güney Eroğlu](https://www.linkedin.com/in/guneyeroglu/) for [Kodluyoruz](https://www.kodluyoruz.org/). I want to thank the Kodluyoruz Team for giving us this opportunity, our trainer [Tolga Eğilmezel](https://www.linkedin.com/in/tolgaegilmezel/) for sharing his knowledge and experience with us, and the assistant group for their support.
 
 
 
