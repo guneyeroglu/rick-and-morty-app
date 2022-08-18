@@ -1,12 +1,12 @@
 # [Rick and Morty Website App](https://rickandmorty-wikiapp.netlify.app/)
 
-<img width="1535" height="750" alt="Ekran Resmi 2022-08-14 22 37 57" src="https://user-images.githubusercontent.com/93340900/184552275-26b58cb6-a8b2-4b02-82ed-f16852a84bea.png">
+![image](https://user-images.githubusercontent.com/93340900/184552275-26b58cb6-a8b2-4b02-82ed-f16852a84bea.png)
 
 #
 
 ## CONTENT and DATA
 
-Hi! In this project, I designed a website about Rick and Morty. I used API for data. (ref: [website](https://rickandmortyapi.com/))
+Hi! In this project that I've developed, I designed a website about Rick and Morty. I used this [API](https://rickandmortyapi.com/) for data.
 
 #
 
@@ -36,6 +36,7 @@ Here are some of the tools I use
 #### - React Hooks for data & state management
 #### - SCSS for styling
 #### - i18next & react-i18next for multi-language (EN | TR)
+#### - Material UI Libary for some React Components
 
 #
 
