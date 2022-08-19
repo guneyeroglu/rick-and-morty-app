@@ -6,7 +6,7 @@
 
 ## CONTENT and DATA
 
-Hi! In this project that I've developed, I designed a website about Rick and Morty. I used this [API](https://rickandmortyapi.com/) for data.
+Hi! In this project that I've developed, I designed a website about Rick and Morty. It has responsive design, so you can open and review this website on any device you want. I used this [API](https://rickandmortyapi.com/) for data.
 
 #
 
@@ -36,7 +36,7 @@ Here are some of the tools I use
 #### - React Hooks for data & state management
 #### - SCSS for styling
 #### - i18next & react-i18next for multi-language (EN | TR)
-#### - Material UI Libary for some React Components
+#### - Material UI Library for some React Components
 
 #
 
