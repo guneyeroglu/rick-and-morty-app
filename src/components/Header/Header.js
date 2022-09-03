@@ -157,10 +157,7 @@ const Header = (props) => {
                 target={'_blank'}
                 rel='noreferrer'
               >
-                <img
-                  src='https://img.icons8.com/3d-fluency/40/000000/3d-fluency-netflix-logo.png'
-                  alt='Netflix'
-                />
+                <Icon icon='NetflixIcon' wh={48} />
               </a>
             </div>
           </div>
