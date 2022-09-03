@@ -3,6 +3,7 @@ import React from 'react';
 import MainIcon from './MainIcon';
 import ArrowIcon from './ArrowIcon';
 import SettingsIcon from './SettingsIcon';
+import NetflixIcon from './NetflixIcon';
 import MagnifyingGlassIcon from './MagnifyingGlassIcon';
 import SortIcon from './SortIcon';
 import CircleCloseIcon from './CircleCloseIcon';
@@ -24,6 +25,7 @@ const logos = {
   LinkedInIcon: <LinkedInIcon />,
   GitHubIcon: <GitHubIcon />,
   HamburgerIcon: <HamburgerIcon />,
+  NetflixIcon: <NetflixIcon />,
 };
 
 const Icon = (props) => {
