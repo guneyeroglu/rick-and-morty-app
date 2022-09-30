@@ -5,6 +5,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import Icon from '../Icons/Icon';
 
+import useClickOutside from '../../hooks/useClickOutside';
+
 import logo from '../../assets/images/logo.png';
 
 import i18next from 'i18next';
@@ -20,6 +22,8 @@ const Header = (props) => {
 
   const [openSettings, setOpenSettings] = useState(false);
   const [hambugerOpen, setHamburgerOpen] = useState(false);
+
+  const domNode = useClickOutside(() => setOpenSettings(false));
 
   const styleSettings = openSettings
     ? { display: 'block' }
@@ -119,8 +123,9 @@ const Header = (props) => {
           ))}
         </ul>
       </nav>
+
       <div className={styles.container__settings}>
-        <div className={styles.collapse}>
+        <div className={styles.collapse} ref={domNode}>
           <button onClick={() => setOpenSettings(!openSettings)}>
             <Icon icon={'SettingsIcon'} fill='black' />
           </button>
