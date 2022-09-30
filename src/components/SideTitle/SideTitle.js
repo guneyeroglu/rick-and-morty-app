@@ -21,7 +21,7 @@ const SideTitle = () => {
       </a>
       <a
         className={styles.wrapper__icon}
-        href='https://github.com/guneyeroglu'
+        href='https://github.com/guneyeroglu/rick-and-morty-app'
         target={'_blank'}
         rel='noreferrer'
       >
