@@ -169,7 +169,6 @@
 @media (max-width: 900px) {
   .card {
     flex: 0 1 33.333%;
-    min-height: 450px;
 
     &__item {
       flex-direction: column;
@@ -190,7 +189,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .card {
     flex: 0 1 50%;
   }
