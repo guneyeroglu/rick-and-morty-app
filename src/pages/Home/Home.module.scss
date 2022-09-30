@@ -197,9 +197,7 @@
 
           &__explanation {
             span {
-              font-family: Roboto;
               font-size: 1rem;
-              color: #3b3e43;
             }
           }
         }
@@ -318,14 +316,7 @@
 
           &__find {
             .button {
-              display: flex;
-              align-items: center;
-              justify-content: center;
               height: 34px;
-              border: 2px solid #3b3e43;
-              border-radius: 0.5rem;
-              padding: 0.5rem;
-              background-color: #fff;
 
               svg {
                 width: 16px;
