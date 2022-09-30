@@ -86,7 +86,7 @@ const Header = (props) => {
     setHamburgerOpen(!hambugerOpen);
   };
 
-  const media = useMediaQuery('(max-width: 600px)');
+  const media = useMediaQuery('(max-width: 666px)');
 
   const handleHamburgerNavigateSearch = (pathname) => {
     if (pathname !== location.pathname) {
