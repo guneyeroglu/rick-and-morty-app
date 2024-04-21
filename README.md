@@ -1,4 +1,4 @@
-# [Rick and Morty Website App](https://rickandmorty-wikiapp.netlify.app/)
+# [Rick and Morty Website App](https://wiki-rickandmorty.vercel.app)
 
 ![image](https://user-images.githubusercontent.com/93340900/184552275-26b58cb6-a8b2-4b02-82ed-f16852a84bea.png)
 
@@ -42,9 +42,9 @@ Here are some of the tools I use
 
 ## DEPLOYMENT
 
-### - Netlify
+### - Vercel
 
-I preferred Netlify for the deployment phase. You can access it via this [link](https://rickandmorty-wikiapp.netlify.app/).
+I preferred Vercel for the deployment phase. You can access it via this [link](https://wiki-rickandmorty.vercel.app).
 
 ### - Localhost
 
